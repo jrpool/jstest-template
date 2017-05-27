@@ -6,7 +6,6 @@
   Preconditions:
     0. anyString is a string.
 */
-export default function _compact(array) {
 // Define a function to return the length of a specified string.
 export default function stringLength(anyString) {
   // If anyString is a string:

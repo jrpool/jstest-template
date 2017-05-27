@@ -18,7 +18,11 @@ stringLength.js
 
 0. If not yet installed, install [node][node].
 
-1. Clone this repository into any local directory in which you can read and write. Make that directory your working directory.
+1. This remote repository is at git@github.com:jrpool/jstest-template.git. Clone it into any local directory in which you can read and write. Make that directory your working directory. Do this by executing:
+
+  `git clone git@github.com:jrpool/jstest-template.git`
+
+  `cd jstest-template`
 
 2. Install required dependencies (see `package.json`) by executing:
 

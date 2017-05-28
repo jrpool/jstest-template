@@ -4,7 +4,7 @@ import stringLength from '../src/fn';
 describe('stringLength()', function(){
 
   it('is a function', function(){
-    expect(stringLength).to.be.a('function')
+    expect(stringLength).to.be.a('function');
   });
 
   context('valid arguments', function() {
@@ -14,12 +14,12 @@ describe('stringLength()', function(){
     });
 
     it('returns 5 when given “hello”', function(){
-      expect(stringLength('hello')).to.be.equal(5)
-    })
+      expect(stringLength('hello')).to.be.equal(5);
+    });
 
     it('incorrect test: returns 5 when given “hello there”', function(){
-      expect(stringLength('hello there')).to.be.equal(5)
-    })
+      expect(stringLength('hello there')).to.be.equal(5);
+    });
 
   });
 

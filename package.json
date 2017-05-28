@@ -14,6 +14,20 @@
   "bugs": {
     "url": "https://github.com/jrpool/jstest-template/issues"
   },
+  "eslintConfig": {
+    "env": {
+      "mocha": true
+    },
+    "globals": {
+      "describe": false,
+      "context": false,
+      "it": false
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    }
+  },
   "scripts": {
     "build": "babel src -d lib",
     "test": "mocha --compilers js:babel-register test/*.js",

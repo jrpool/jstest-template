@@ -43,25 +43,33 @@ stringLength.js
 In a freshly cloned repository, the `npm test` command should produce the following output:
 
 ```
-> jstest-template@0.0.0 test /Users/pool/Documents/Topics/train/lguild/projects/jstest-template
+> jstest-template@1.0.0 test …/jstest-template
 > mocha --compilers js:babel-register test/*.js
 
   stringLength()
     ✓ is a function
-    ✓ returns a number
-    ✓ returns 5 when given “hello”
-    1) incorrect test: returns 5 when given “hello there”
+    valid arguments
+      ✓ returns a number
+      ✓ returns 5 when given “hello”
+      1) incorrect test: returns 5 when given “hello there”
+    invalid arguments
+      ✓ returns undefined if anyString is a number
+      ✓ returns undefined if anyString is an array
+      ✓ returns undefined if anyString is an object
 
-  3 passing (11ms)
+
+  6 passing (69ms)
   1 failing
 
-  1) stringLength() incorrect test: returns 5 when given “hello there”:
+  1) stringLength() valid arguments incorrect test: returns 5 when given “hello there”:
 
       AssertionError: expected 11 to equal 5
       + expected - actual
 
-      +5
       -11
+      +5
+
+      at Context.<anonymous> (test/fn_test.js:21:49)
 
 npm ERR! Test failed.  See above for more details.
 ```

@@ -6,7 +6,10 @@
   Preconditions:
     0. anyString is a string.
 */
-// Define a function to return the length of a specified string.
+/*
+  Define a function to return the length of a specified string and make it
+  the default export from this module.
+*/
 export default function stringLength(anyString) {
   // If anyString is a string:
   if (typeof anyString === 'string') {
@@ -18,4 +21,4 @@ export default function stringLength(anyString) {
     // Return a failure result.
     return undefined;
   }
-};
+}
